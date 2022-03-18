@@ -1,0 +1,12 @@
+<!--pages/uploadImg/uploadImg.wxml-->
+<view class="imgupload">
+
+  <view bindtap="uploadimg" class="imgselect" ></view>
+
+  <view class="imgselected" wx:for="{{sourcess}}" wx:key="{{index}}" wx:for-item="sourcess">
+    <image src="{{sourcess}}" ></image>
+  </view>
+  <input type="text" value="{{sources}}" name="userimg" style="display:none;"></input>
+
+</view>
+

@@ -1,0 +1,63 @@
+<!--pages/inquriy/inquriy.wxml-->
+<view>
+
+<radio-group bindchange="listenCheckboxChange">
+<view class="item">
+<view class="box">
+  <view class="box2">
+   <image class="face" src="../../images/random.png"></image>
+   </view>
+  
+  <view class="box2" style="width:75%">
+
+    <view >
+     <text style="font-weight:900;font-size:35rpx;color:#010101" class="text" >系统指派医生</text>
+    </view>
+
+    <view class="box2">  
+    <text style="font-size:25rpx;color:#6F6F6F;" class="text" >二级以上医院医生 限20次对话</text>
+    <text style="font-size:25rpx;color:#EAC77A" class="text">金币不足(需200现有{{money}})</text> 
+    </view>
+   
+   </view>
+  <radio value="-1"></radio>
+</view>
+</view>
+<scroll-view  scroll-y="true">
+ <block wx:for="{{showdata}}" wx:for-item="itemName" wx:for-index="index">
+ <view class="item">
+ <view class="box" >
+   <view class="box2">
+   <image class="face" src="{{itemName.avator}}"></image>
+   <view style=" margin-top:10%;border:1rpx solid grey;justify-content:center;display:flex; " bindtap="like" id="{{itemName.id}}" data-index="{{index}}">
+     <text style="color:grey;font-size:20rpx">{{itemName.like==0?'关注':'取消关注'}}</text>
+   </view>
+ 
+   </view>
+	 
+   <view class="box2" style="width:75%">
+    <view >
+     <text style="font-weight:900;font-size:35rpx;color:#010101" class="text" >{{itemName.name}}</text>
+     <text style="font-size:25rpx;color:#6F6F6F;" class="text">{{itemName.department}}</text>
+     <text style="font-size:25rpx;color:#6F6F6F" class="text">{{itemName.title}}</text>
+    </view>
+
+    <view class="box2">
+     
+    <text style="font-size:25rpx;color:#6F6F6F;" class="text" >{{itemName.hospital}}</text>
+    <text style="font-size:25rpx;color:grey" class="text">擅长：{{itemName.skill}}</text>
+     
+    </view>
+   
+   </view>
+   <radio  value="{{itemName.accid}}"> </radio>
+  </view>
+</view>
+</block>
+</scroll-view>
+</radio-group>
+
+
+
+</view>
+<button class="btn" style="width:100%;" bindtap="ask" >提问(2元)</button>

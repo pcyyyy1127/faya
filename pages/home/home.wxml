@@ -1,0 +1,74 @@
+
+
+ <view class="back">
+<swiper class="navigation" indicator-dots="true" indicator-color="#fff" indicator-active-color="#000"
+  autoplay="true" previous-margin="5px" next-margin="5px" circular="true">
+  <swiper-item>
+    <image class="banner" mode="widthFix" src="/images/p_1.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="banner" mode="widthFix" src="/images/p_2.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="banner" mode="widthFix" src="/images/p_3.png"> </image>
+  </swiper-item>
+   <swiper-item>
+    <image class="banner" mode="widthFix" src="/images/p_4.png"></image>
+  </swiper-item>
+</swiper>
+<view class="mokuai">
+  <image src="/images/yellow.png" class="yellow"></image>
+  <view class="class_text">模块功能 </view>
+</view>
+
+<scroll-view scroll-x="true">
+  <view class="channalCon">
+    <navigator open-type="navigate" class="position_1" url="/pages/sleep/sleep" >
+      <image class="channalPic" src="/images/homesleep.png"></image>
+      <view class="channalText">睡眠监督</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" url="/pages/stresstest/stresstest" >
+      <image class="channalPic" src="/images/heart.png"></image>
+      <view class="channalText">压力测试</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" url="/pages/inquriy/inquriy" >
+      <image class="channalPic" src="/images/doctor.png"></image>
+      <view class="channalText">医生咨询</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" >
+      <image class="channalPic" src="/images/record.png"></image>
+      <view class="channalText">记录数量</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" >
+      <image class="channalPic" src="/images/game.png"></image>
+      <view class="channalText">趣味功能</view>
+    </navigator>
+
+  </view>
+</scroll-view>
+
+<view class="mokuai">
+  <image src="/images/yellow.png" class="yellow"></image>
+  <view class="class_text">每日科普 </view>
+</view>
+<view class="science" >
+ <block  wx:for="{{sciencelist}}" wx:key="it"  wx:for-index="index"   >
+      <view class="detailsci" data-index="{{index}}" bindtap="todetail">
+        <image src="{{item.imgUrl}}"></image>
+        <view class="detailtext">
+             <text style="font-size:28rpx;color:#565555;font-weight:bold;">{{item.title}}</text>
+             <text style="font-size:25rpx;color:#787575;margin-top:10rpx" class="text2">{{item.content}}</text>
+        </view> 
+        <text style="color:#787575;margin-top:140rpx" bindtap="todetail">></text>
+    </view>
+ </block>
+
+ </view>
+
+
+
+</view>

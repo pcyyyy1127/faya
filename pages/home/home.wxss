@@ -1,0 +1,105 @@
+/**index.wxss**/
+
+.navigation{
+  height: 450rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 5%;
+  box-shadow: 0px 3px 5px 5px rgba(49, 49, 49, 0.15);
+}
+.navigation image{
+  width: 100%;
+  height: 450rpx;
+  box-sizing: border-box;
+}
+.channalCon{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10rpx 20rpx;
+}
+.channalPic{
+  width: 120rpx;
+  height: 120rpx;
+  -webkit-box-shadow:  0px px 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow:  0px 3px 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 5px 5px rgba(49, 49, 49, 0.15);
+  border-radius: 10%;
+  overflow: hidden; 
+}
+.mokuai{
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.yellow{
+  width: 2%;
+  height: auto;
+}
+.class_text{
+  font-family: Microsoft YaHei;
+  font: 1em sans-serif;
+  margin-left: 5rpx;
+  font-size-adjust: none;
+}
+.position_1{
+  text-align: center;
+  padding: 0 20rpx;
+  width: 200rpx;
+  
+}
+
+.channalText{
+  font-size: 30rpx;
+  font: bold;
+  color: #666666;
+  margin-bottom: 10rpx;
+  font-family: SimHei;
+}
+
+.banner{
+  padding: 0px 5px;
+  box-sizing: border-box;
+  
+}
+.science{
+  display: flex;
+  flex-direction: column;
+  margin:20rpx 0rpx 20rpx 35rpx;
+}
+.detailsci{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25rpx;
+}
+.detailsci image{
+  width: 26%;
+  height: 180rpx;
+  border-radius: 5%;
+}
+.detailtext{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25rpx;
+  line-height: 40rpx;
+}
+
+.text2 {
+    width: 395rpx;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /*两行,超出为省略号*/
+    -webkit-box-orient: vertical;
+    align-content: center;
+    font-size: 28rpx;
+    color: #666666;
+    line-height: 40rpx;
+    margin-top: 15rpx;
+}
+

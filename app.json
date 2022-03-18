@@ -1,0 +1,68 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/recentchat/recentchat",
+    "pages/inquriy/inquriy",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/chating/chating",
+    "pages/me/me",
+    "pages/doctorRecentChat/doctorRecentChat",
+    "pages/home/home",
+    "pages/circle/circle",
+    "pages/sleep/sleep",
+    "pages/test/test",
+    "pages/issue/issue",
+    "pages/science/science",
+    "pages/uploadImg/uploadImg",
+    "pages/stresstest/stresstest",
+    "pages/result/result"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#31004a",
+    "navigationBarTitleText": "发芽",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#999BB2",
+    "selectedColor": "#F5AB36",
+    "backgroundColor": "#101010",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/index_2.png",
+        "selectedIconPath": "images/index_1.png"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "text": "圈子",
+        "iconPath": "images/circle_1.png",
+        "selectedIconPath": "images/circle_2.png"
+      },
+      {
+        "pagePath": "pages/recentchat/recentchat",
+        "text": "聊天",
+        "iconPath": "images/chat_1.png",
+        "selectedIconPath": "images/chat_2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me_1.png",
+        "selectedIconPath": "images/me_2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

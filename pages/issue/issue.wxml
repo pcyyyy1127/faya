@@ -1,0 +1,33 @@
+<!--pages/issue.wxml-->
+<view class="issuecontainer"> 
+    <text class="txtsend" bindtap="send">发送</text>
+    <textarea class="textarea" style="margin-top:50rpx;margin-left:30rpx;" placeholder="输入内容（最多500字）" cursor-spacing="{{65}}" show-confirm-bar="{{false}}" adjust-position="{{true}}" auto-focus="{{true}}" bindinput="contentInput"/>
+
+<view class="imgupload" class="imgContainer">
+  <view bindtap="uploadImage" class="imgselect" >
+    <image src="/images/photo.png">上传图片</image>
+  </view>
+  <view class="imgselected" wx:for="{{sourcess}}" wx:key="{{index}}" wx:for-item="sourcess">
+    <image src="{{sourcess}}" ></image>
+  </view>
+  <input type="text" value="{{sources}}" name="userimg" style="display:none;"></input>
+</view>
+
+  <!--
+<view class="issueimage" bindtap="uploadImage">
+       <image src="/images/photo.png">上传图片</image>
+    </view>
+  --> 
+    <text class="line">__________________________________________</text>
+    <view class="limits">
+      <image src="/images/limit.png"> </image>
+      <text>权限设置</text>
+      <text class="posi">所有人 ></text>
+    </view>
+     <view class="limits">
+      <image src="/images/position.png"> </image>
+      <text>选择地址</text>
+      <text class="posi">成都温江区 ></text>
+    </view>
+    
+</view>

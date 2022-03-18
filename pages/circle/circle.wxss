@@ -1,0 +1,266 @@
+/* pages/dp/dp.wxss */
+.dtop{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-size: 100%,100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container_c{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+}
+
+
+.dtopimg{
+  width: 92%;
+  margin:20rpx 10rpx 0 32rpx;
+  height: 20vh;
+  border-radius: 20rpx;
+}
+.loc{
+  width: 92%;
+  height: 5vh;
+  margin:15rpx 30rpx 0 32rpx;
+  color: rgb(207, 203, 203);
+  font-size: 25rpx;
+}
+.loc_look{
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+.loc_look image{
+  width: 25rpx;
+  height: 25rpx;
+}
+.dclassify{
+  display: flex;
+  flex-direction: row;
+  width:35%;
+  height: 6vh;
+  margin: 10rpx 0 0 20rpx;
+  background-color:#291E6C ;
+  border-radius: 40rpx;
+  color: white;
+  font-size: 24rpx;
+}
+.sort{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 150rpx;
+  font-size:30rpx;
+}
+.sort image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+}
+.dpbox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rpx;
+  border:1px solid #eee;
+  border-radius:2%;
+}
+.dpbox>.header{  
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  margin:10rpx;
+}
+.header>image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  margin: 10rpx;
+  border:1rpx solid #eeeeee;
+}
+.word{
+  display: flex;
+  flex-direction: column;
+}
+.word>.nickname{
+  font-size: 30rpx;
+}
+.word>.time{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: rgb(207, 203, 203);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 110rpx;
+  margin-right: 40rpx;
+  font-size: 30rpx;
+}
+.con_img{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.content image{
+  width: 160rpx;
+  height: 150rpx;
+  margin-right: 15rpx;
+}
+.like image{
+  width: 50rpx;
+  height: 50rpx;
+ 
+}
+
+.like{
+  display: flex;
+  justify-content: center;
+  margin:30rpx 0rpx 20rpx 0rpx;
+  font-size: 20rpx;
+  align-items: center;
+}
+.like text{
+  color: #8799A3;
+  margin-right: 100rpx;
+  margin-left: 6rpx;
+}
+.friendcircle{
+  margin:10rpx 10rpx 10rpx 20rpx;
+}
+.nearcircle{
+  margin:10rpx 10rpx 10rpx 24rpx;
+}
+.posimg{
+  width: 92%;
+  margin:0rpx 10rpx 0 32rpx;
+  height: 15vh;
+  border-radius: 20rpx;
+  background-color: wheat;
+}
+
+.distance{
+  color: rgb(148, 144, 144);
+  font-size: 20rpx;
+  margin-left: 200rpx;
+}
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+.model {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  }
+  
+  .input-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 30rpx;
+  padding-bottom: 130rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  }
+  
+  .textarea {
+  background-color: #fff;
+  width: 80%;
+  height: 5vh;
+  font-size: 15px;
+  position: static;
+  padding-left:10rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  }
+  
+  .send {
+  font-size: 15px;
+  margin-top: 5rpx;
+  color:#F5AB36;
+  }
+  
+  .invisible_model{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  }
+  .comments{
+      display: flex;
+      flex-direction: row;
+     
+  }
+  .comments image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+    border-radius: 100%;
+  }
+  .commentword{
+    display: flex;
+    flex-direction: column;
+  }
+  .commentword>.nickname{
+    font-size: 30rpx;
+    color: rgba(93, 93, 95, 100);
+  }
+  .commentword>.comment{
+    margin-top: 10rpx;
+    font-size: 29rpx;
+    color: rgba(136, 129, 129, 100);
+  }
+  .commentime{
+    color: rgb(148, 144, 144);
+    font-size: 20rpx;
+    float: right;
+    position: static;
+    margin-left: 350rpx;
+  }
+  .commentbox{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+  }

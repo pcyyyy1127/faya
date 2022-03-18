@@ -1,0 +1,29 @@
+/* pages/uploadImg/uploadImg.wxss */
+.imgselect{
+  width: 200rpx;
+  height: 200rpx;
+  border:1px solid #DCDCDC;
+  text-align: center;
+  margin:20rpx 6rpx;
+  align-items: center;
+  background-image:url(https://你的网址，或者索性用纯色背景/imgupload.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+}
+
+.imgselect image, .imgselected image{
+  margin:auto;
+  width: 195rpx;
+  height: 195rpx;
+}
+
+.imgselected{
+  width: 200rpx;
+  height: 202rpx;
+  text-align: center;
+  margin:20rpx 6rpx;
+  padding:0px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view class="background">
+<view class="first">
+<input placeholder="用户名" placeholder-class="plas"
+class="inputs" type="text" bindinput="usernameInput"></input>
+</view>
+
+
+<view class="second">
+<input placeholder="输入密码"
+placeholder-class="plas"
+class="inputs" type="password" bindinput="passwordInput"></input>
+</view>
+
+<view class="click" bindtap="login">登录</view>
+
+
+</view>

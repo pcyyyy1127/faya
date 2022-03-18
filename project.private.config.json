@@ -1,0 +1,41 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stress_test/stress_test",
+          "pathName": "pages/stress_test/stress_test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/result/result",
+          "pathName": "pages/result/result",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stresstest/stresstest",
+          "pathName": "pages/stresstest/stresstest",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

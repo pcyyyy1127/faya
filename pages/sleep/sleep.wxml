@@ -1,0 +1,50 @@
+<!--pages/sleep.wxml-->
+<view class="sleepcontainer">
+  <view class="card">
+<!--第一部分-->
+    <view class="cardA">
+      <view class="clock">
+         <view class="clockdetail">
+            <image src="/images/getup.png"></image>
+            <text>07:00</text>
+         </view>
+         <view class="clockdetail">
+            <image src="/images/sleep.png"></image>
+            <text>23:59</text>
+        </view>
+      </view>
+      <view class="signbox">
+        <view class="sign">
+          <text>30</text>
+        </view>
+        <text style="margin-top:10rpx">打卡天数</text>
+      </view>
+     
+      <view class="clock">
+         <view class="clockdetail">
+            <image src="/images/getup.png"></image>
+            <text style="width:70rpx">8hours</text>
+        </view>
+      </view>
+    </view>
+
+    
+<!--第二部分（芽芽提醒）-->
+    <text class="txt">{{remindyaya}}</text>
+  </view>
+
+  <view class="cardB" wx:if="{{isiamge}}" >
+    <image class="wordimg" src="/images/ex.jpg" ></image>
+    <text class="txtcontent">{{sleepcontents}}</text>
+    <text class="yaya" style="align-self:center;">——芽芽祝你好梦——</text>
+  </view>
+    <view class="cardB" wx:if="{{isiamge}}" style="height:45vh">
+    <text style="align-self:center;font-size:30rpx;margin-top:40rpx">A Soulmate Who Wasn't</text>
+    <text style="align-self:center;font-size:30rpx;margin-top:20rpx;color:gray;">Jess Benko</text>
+    <view class="imgbox">
+         <image class="musicimg" src="/images/ex.jpg" ></image>
+         <image class="playicon" src="{{playsrcpath}}" bindtap="playmusic"></image>
+    </view>
+    <text class="yaya" style="align-self:center;">——芽芽祝你好梦——</text>
+  </view>
+</view>

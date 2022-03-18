@@ -1,0 +1,76 @@
+<view class="back">
+
+
+<view class="container_c">
+<view class="container">
+  <!--顶部-->
+   
+ 
+   <view class="dtop" style="position:fixed;top:0;">
+      <image src="/images/circle_add.png" style="width:45rpx;height:50rpx;margin-left:85%;margin-top:15rpx;" bindtap="issue"></image>
+         <image src="https://i.loli.net/2021/04/13/gDqrxU73ToMQ4s1.jpg"  class="dtopimg" mode='aspectFill'></image>
+        <view class="loc">
+            <text>自动定位：成都市温江区</text>
+             <view class="loc_look">
+                <text>查看></text>
+             </view>
+        </view>
+   </view>
+    </view>
+  <!---->
+  <scroll-view wx:for="{{circleList}}" >
+    <view class="dpbox">
+      <view class="header">
+        <image src="{{item.avatarUrl}}" style="width:75rpx;height:75rpx"></image>   
+        <view class="word">
+            <text class="nickname">{{item.nickName}}</text>
+            <text class="time">{{item.sendTime}}</text>
+         </view>
+         <view class="distance">
+           <text>{{item.location}}</text>
+         </view>
+        </view>
+      <view class="content">
+        <text>{{item.content}}</text>
+        <view class="con_img" wx:if="{{item.image1}}" >
+            <image src="{{item.image1}}"></image>
+            <image src="{{item.image2}}"></image>
+            <image src="{{item.image3}}"></image>
+        </view>
+      
+      </view>
+      <view class="like">
+         <image src="/images/like.png" bindtap="clicklike"></image>
+         <text>{{item.like}}</text>
+         <image src="/images/cir_comment.png" bindtap="changeinputBoxShow"></image>
+         <text  bindtap="changeinputBoxShow">{{item.comment}}</text>
+         <image src="/images/cir_transmit.png" ></image>
+         <text>{{item.collect}}</text>
+      </view>
+      <!-- 评论框 -->
+            <view class='model' wx:if="{{inputBoxShow}}">
+                <!-- invisible_model view 用于点击隐藏model评论框 -->
+                <view class='invisible_model' catchtap='invisible'></view>
+                  <view class='input-box'>
+                  <view class="comments">
+                       <image src="/images/flower.jpg"></image>   
+                         <view class="commentword">
+                                <text class="nickname">用户昵称</text>
+                                 <text class="comment">发表内容</text>
+                         </view>
+                          <view class="commentime">
+                            <text>刚刚</text>
+                          </view>
+                  
+                  </view>
+                  <view class="commentbox">
+                     <textarea class="textarea" placeholder="请评论内容" />
+                     <text class='send'>发送</text>
+                  </view>
+                
+                 </view>
+               </view>
+      </view>
+  </scroll-view>
+</view>
+</view>

@@ -1,0 +1,16 @@
+/* pages/science.wxss */
+.scicontainer{
+  display: flex;
+  flex-direction: column;
+
+}
+.article{
+  background-color:#F6F6F6;
+  width: 90%;
+  padding: 20rpx;
+  align-self: center;
+  font-size: 30rpx;
+  line-height:55rpx;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+}

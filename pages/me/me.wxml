@@ -1,0 +1,66 @@
+<view class="back">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <view class="view_image_text">
+      <text>{{userInfo.nickName}}</text>
+     <view class="image_radius_1">
+      <image class="image_radius_2" src="{{userInfo.avatarUrl}}" />
+     </view>
+     
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="/images/guanz.png"></image>
+      <text class="text_saoyisao">已关注</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="/images/loved.png"></image>
+      <text class="text_saoyisao">已收藏</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="/images/tiezi2.png"></image>
+      <text class="text_saoyisao">帖子</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="/images/setting.png"></image>
+      <text class="text_saoyisao">设置</text>
+    </view>
+
+  </view>
+  <!-- 第三部分 -->
+  <view class="view_3">
+    
+    <!--<view class="line"></view>-->
+    <view class="list-item">
+      <image class="item-image" src="/images/comment.png"></image>
+      <text class="item-text">我的评价</text>
+      <image class="image-jiantou" src="/images/arrow.png"></image>
+    </view>
+   <!--<view class="line"></view>-->
+    <view class="list-item">
+      <image class="item-image" src="/images/update.png"></image>
+      <text class="item-text">版本更新</text>
+      <image class="image-jiantou" src="/images/arrow.png"></image>
+    </view>
+    <!--<view class="line"></view>-->
+    <view class="list-item">
+      <image class="item-image" src="/images/kefu.png"></image>
+      <text class="item-text">客服服务</text>
+      <image class="image-jiantou" src="/images/arrow.png"></image>
+    </view>
+   <!--<view class="line"></view>-->
+    <view class="list-item">
+      <image class="item-image" src="/images/share.png"></image>
+      <text class="item-text">分享邀请</text>
+      <image class="image-jiantou" src="/images/arrow.png"></image>
+    </view>
+     <view class="list-item">
+      <image class="item-image" src="/images/exit.png"></image>
+      <text class="item-text">退出登录</text>
+      <image class="image-jiantou" src="/images/arrow.png"></image>
+    </view>
+   <!--<view class="line"></view>-->
+  </view>
+</view>

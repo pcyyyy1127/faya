@@ -1,0 +1,9 @@
+<!-- 评论框 -->
+<view class='model' wx:if="{{inputBoxShow}}">
+<!-- invisible_model view 用于点击隐藏model评论框 -->
+<view class='invisible_model' catchtap='invisible'></view>
+<view class='input-box'>
+<textarea class="textarea" placeholder="请输入你的看法" cursor-spacing="{{65}}" show-confirm-bar="{{false}}" adjust-position="{{true}}" auto-focus="{{true}}" />
+<text class='send'>发送</text>
+</view>
+</view>

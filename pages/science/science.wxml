@@ -1,0 +1,8 @@
+<!--pages/science.wxml-->
+<view class="scicontainer">
+    <text style="margin:15rpx 0 0 20rpx;font-weight:bold;color:#565555;">{{article.title}}</text>
+    <view  class="article">
+        <text>{{article.content}}</text>
+    </view>
+    
+</view>
